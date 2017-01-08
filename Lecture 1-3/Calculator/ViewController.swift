@@ -72,23 +72,43 @@ class ViewController: UIViewController {
             displayValue = brain.result
         }
     }
+
     
     @IBAction func clear() {
         userIsInTheMiddleOfTyping = false
         brain.clear()
+        brain.variableValues.removeAll()
         displayValue = brain.result
         display.text = "0"
         history.text = " "
     }
     
-    @IBAction func setVariable(sender: UIButton) {
-        let variableName = sender.currentTitle
+
+    // M
+    @IBAction func setOperand(sender: UIButton) {
+        let variableName = sender.currentTitle!
+        
+        if brain.variableValues[variableName] == nil {
+             brain.variableValues[variableName] = 0.0
+        }
         brain.setOperand(variableName)
+        
     }
     
-    @IBAction func setOperand(sender: UIButton) {
-        let variable = sender.currentTitle
-        brain.variableValues[variable] = Double(displayValue)
+    // →M
+    @IBAction func setVariable(sender: UIButton) {
+        let variableName = "M"
+        //print(displayValue)
+        //print(variableName)
+        brain.variableValues[variableName] = displayValue
+        //print("printing...")
+        //print(brain.variableValues)
+        savedProgram = brain.program
+        if savedProgram != nil {
+            brain.program = savedProgram!
+            displayValue = brain.result
+        }
+
     }
     
     // every new class has one free initializer which is an initializer that takes no arguments. That is used here

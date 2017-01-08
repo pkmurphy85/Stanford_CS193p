@@ -22,12 +22,15 @@ class CalculatorBrain {
         internalProgram.append(operand)
         descriptionAccumulator = String(format: "%g", operand)
     }
+
     
     func setOperand(variableName: String) {
-        
+        accumulator = variableValues[variableName]!
+        internalProgram.append(variableName)
+        descriptionAccumulator = variableName
     }
     
-    var variableValues: Dictionary<String, Double>
+    var variableValues =  [String:Double]()
     
     
     private var currentPrecedence = Int.max
@@ -113,7 +116,13 @@ class CalculatorBrain {
                     if let operand = op as? Double {
                         setOperand(operand)
                     } else if let operation = op as? String {
-                        performOperation(operation)
+                        if(operation == "M"){
+                            //print("printing dict \(operation)")
+                            //print(variableValues)
+                            setOperand(operation)
+                        } else {
+                            performOperation(operation)
+                        }
                     }
                 }
             }
