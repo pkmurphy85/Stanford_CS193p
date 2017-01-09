@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CDA2230D1E235D2200B4E04D /* EmotionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2230C1E235D2200B4E04D /* EmotionsViewController.swift */; };
+		CDA2230F1E24164900B4E04D /* VCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2230E1E24164900B4E04D /* VCL.swift */; };
 		CDA311AA1E22C9790065F83C /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA5777E1E1F324600E375F9 /* FaceViewController.swift */; };
 		CDA311AB1E22C97C0065F83C /* FacialExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA311A81E22C5C50065F83C /* FacialExpression.swift */; };
 		CDA5777D1E1F324600E375F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA5777C1E1F324600E375F9 /* AppDelegate.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CDA2230C1E235D2200B4E04D /* EmotionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionsViewController.swift; sourceTree = "<group>"; };
+		CDA2230E1E24164900B4E04D /* VCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCL.swift; sourceTree = "<group>"; };
 		CDA311A81E22C5C50065F83C /* FacialExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacialExpression.swift; sourceTree = "<group>"; };
 		CDA577791E1F324600E375F9 /* FaceIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDA5777C1E1F324600E375F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +66,9 @@
 				CDA5777E1E1F324600E375F9 /* FaceViewController.swift */,
 				CDA311A81E22C5C50065F83C /* FacialExpression.swift */,
 				CDA577801E1F324600E375F9 /* Main.storyboard */,
+				CDA2230C1E235D2200B4E04D /* EmotionsViewController.swift */,
 				CDA5778F1E1F332A00E375F9 /* FaceView.swift */,
+				CDA2230E1E24164900B4E04D /* VCL.swift */,
 			);
 			path = FaceIt;
 			sourceTree = "<group>";
@@ -152,6 +158,8 @@
 			files = (
 				CDA311AA1E22C9790065F83C /* FaceViewController.swift in Sources */,
 				CDA311AB1E22C97C0065F83C /* FacialExpression.swift in Sources */,
+				CDA2230D1E235D2200B4E04D /* EmotionsViewController.swift in Sources */,
+				CDA2230F1E24164900B4E04D /* VCL.swift in Sources */,
 				CDA5777D1E1F324600E375F9 /* AppDelegate.swift in Sources */,
 				CDA577901E1F332A00E375F9 /* FaceView.swift in Sources */,
 			);
